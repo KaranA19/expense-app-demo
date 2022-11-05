@@ -60,15 +60,15 @@ export default function Reports() {
           </MuiPickersUtilsProvider>
           <VictoryChart
                 theme={VictoryTheme.material}
-                domainPadding={10}
-                height={300}
-                width={450}>
+                domainPadding={0}
+                height={250}
+                width={550}>
                 <VictoryAxis/>
                 <VictoryBar
                     categories={{
                         x: monthStrings
                     }}
-                    style={{ data: { fill: "#69f0ae", width: 20 }, labels: {fill: "#01579b"} }}
+                    style={{ data: { fill: "#69f0ae", width: 15 }, labels: {fill: "#01579b"} }}
                     data={yearlyExpense.monthTot}
                     x={monthStrings['x']}
                     domain={{x: [0, 13]}}

@@ -10,7 +10,7 @@ import { VictoryTheme, VictoryScatter, VictoryChart, VictoryTooltip, VictoryLabe
 
 const useStyles = makeStyles(theme => ({
   title: {
-    padding:`29px ${theme.spacing(2.5)}px 2px`,
+    padding:`25px ${theme.spacing(2.5)}px 2px`,
     color: '#2bbd7e',
     display:'inline'
   }
@@ -61,16 +61,19 @@ export default function MonthlyScatter() {
         <VictoryChart
                 theme={VictoryTheme.material}
                 height={400}
-                width={700}
-                domainPadding={40}
+                width={750}
+                domainPadding={30}
+                padding={80}
+                
+                
                 >
                     <VictoryScatter
                         style={{
-                            data: { fill: "#01579b", stroke: "#69f0ae", strokeWidth: 2 },
+                            data: { fill: "#01579b", stroke: "#69f0ae", strokeWidth: 1.5 },
                             labels: { fill: "#01579b", fontSize: 10, padding:8}
                         }}
                         bubbleProperty="y"
-                        maxBubbleSize={15}
+                        maxBubbleSize={12}
                         minBubbleSize={5}
                         labels={({ datum }) => `₹${datum.y} on ₹${datum.x}th`}
                         labelComponent={<VictoryTooltip/>}
@@ -80,13 +83,13 @@ export default function MonthlyScatter() {
                     <VictoryLabel
                       textAnchor="middle"
                       style={{ fontSize: 14, fill: '#8b8b8b' }}
-                      x={270} y={390}
+                      x={350} y={360}
                       text={`Day of month`}
                     />
                     <VictoryLabel
                       textAnchor="middle"
                       style={{ fontSize: 14, fill: '#8b8b8b' }}
-                      x={55} y={190}
+                      x={10} y={190}
                       angle = {270} 
                       text={`Amount (₹)`}
                     />

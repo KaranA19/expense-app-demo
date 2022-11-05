@@ -89,11 +89,11 @@ export default function Reports() {
         <Button variant="contained" color="secondary" onClick={searchClicked}>GO</Button>
         </div>
       
-                <div style={{width: 550, margin: 'auto'}}>
-                <svg viewBox="0 0 320 320">
+                <div style={{width: 470, margin: 'auto'}}>
+                <svg viewBox="0 0 340 340">
                 
             <VictoryPie standalone={false} data={expenses.monthAVG} innerRadius={50} theme={VictoryTheme.material} 
-                labelRadius={({ innerRadius }) => innerRadius + 14 }
+                labelRadius={({ innerRadius }) => innerRadius + 11 }
                 labelComponent={<VictoryLabel angle={0} style={[{
                     fontSize: '11px',
                     fill: '#0f0f0f'
@@ -105,7 +105,7 @@ export default function Reports() {
                  />
                  <VictoryLabel
           textAnchor="middle"
-          style={{ fontSize: 14, fill: '#8b8b8b' }}
+          style={{ fontSize: 12, fill: '#8b8b8b' }}
           x={175} y={170}
           text={`Spent \nper category`}
         />
