@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
     marginBottom: theme.spacing(5),
   },
   title: {
-    padding:`${theme.spacing(3)}px ${theme.spacing(2.5)}px ${theme.spacing(2)}px`,
+    padding:`${theme.spacing(1.5)}px ${theme.spacing(2)}px ${theme.spacing(2)}px`,
     color: theme.palette.openTitle
   },
   media: {
@@ -46,8 +46,12 @@ export default function Home(){
               <Typography variant="h6" className={classes.title}>
                 Home Page
               </Typography>
-              <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
-              <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@anniespratt" target="_blank" rel="noopener noreferrer">Annie Spratt</a> on Unsplash</Typography>
+              {/* <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/> */}
+              <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">"A lack of cash is commonly cited as one of the main reasons why businesses fail. Article, after article, after article highlights this. If cash flow is so significant, surely you need to do everything in your power to better manage it, so you don’t fall into the trap of having too little?
+ One way you can do this is through daily expenses management so that you don’t get to the end of the month and find that expenses outstripped income.mastering cash flow
+By tracking business expenses daily, you can also control costs, and see what you’re spending your money on and how much you’re spending. These daily figures become your marker to see whether you’re over or under your monthly budget. The entire process helps you become more financially aware.
+Armed with this knowledge you can fix bad spending habits and make better ones.
+You’ll not only save money—which has a positive impact on your bottom line—but free up cash that you can invest in other crucial business areas, e.g.,yourmarketing department. Ultimately, you improve your money management."</Typography>
               <CardContent>
                 <Typography variant="body1" component="p">
                   Welcome to the MERN Expense Tracker. <Link to='/signup'>Sign up</Link> or <Link to='/signin'>sign in</Link> to get started.

@@ -72,7 +72,7 @@ export default function NewExpense() {
         category: values.category || undefined,
         amount: values.amount || undefined,
         incurred_on: values.incurred_on || undefined,
-        notes: values.notes || undefined 
+        notes: values.notes || 'No notes'
     }
     create({
         t: jwt.token

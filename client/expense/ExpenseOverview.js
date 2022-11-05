@@ -11,7 +11,7 @@ const useStyles = makeStyles(theme => ({
   card: {
     maxWidth: 800,
     margin: 'auto',
-    marginTop: theme.spacing(5),
+    marginTop: theme.spacing(3),
     marginBottom: theme.spacing(5),
   },
   title2: {
@@ -19,15 +19,15 @@ const useStyles = makeStyles(theme => ({
     color: '#2bbd7e'
   },
   totalSpent: {
-    padding: '50px 40px',
-    fontSize: '4em',
+    padding: '40px 40px',
+    fontSize: '2.5em',
     margin: 20,
-    marginBottom: 30,
-    backgroundColor: '#01579b',
-    color: '#70f0ae',
+    marginBottom: 20,
+    backgroundColor: '#ACEAE3',
+    color: '#000000',
     textAlign: 'center',
-    borderRadius: '50%',
-    border: '10px double #70f0ae',
+    borderRadius: '25%',
+    border: '6px double #F0FACB',
     fontWeight: 300
   },
   categorySection: {
@@ -44,16 +44,18 @@ const useStyles = makeStyles(theme => ({
     width: 200,
     display: 'inline-table',
     textAlign: 'center',
-    margin: 2
+    margin: 2,
+    
   },
   catTitle: {
     display: 'inline-block',
-    padding: 10,
-    backgroundColor: '#f4f6f9'
+    padding: 8,
+    backgroundColor: '#f4f6f9',
+    fontSize:'1.25em'
   },
   catHeading: {
     color: '#6b6b6b',
-    fontSize: '1.15em',
+    fontSize: '1em',
     backgroundColor: '#f7f7f7',
     padding: '4px 0'
   },

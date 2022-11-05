@@ -20,23 +20,25 @@ import { DatePicker, DateTimePicker, MuiPickersUtilsProvider} from "@material-ui
 const useStyles = makeStyles(theme => ({
   root: {
     width: '90%',
-    maxWidth: '800px',
+    maxWidth: '700px',
     margin: 'auto',
     marginTop: 40,
     marginBottom: 40
   },
   heading: {
-    fontSize: '1.5em',
+    fontSize: '1.25em',
     fontWeight: theme.typography.fontWeightRegular,
     
-    marginTop: 12,
-    marginBottom: 4
+    marginTop: 0,
+    marginBottom: 4,
+    marginLeft:10
   },
   error: {
     verticalAlign: 'middle'
   },
   notes: {
-    color: 'grey'
+    color: 'grey',
+    marginLeft:10
   },
   panel: {
     border: '1px solid #58bd7f',
@@ -47,7 +49,7 @@ const useStyles = makeStyles(theme => ({
       width: 90
   },
   amount: {
-    fontSize: '2em',
+    fontSize: '1.5em',
     color: '#2bbd7e',
   },
   search:{
@@ -66,7 +68,7 @@ const useStyles = makeStyles(theme => ({
       marginRight: 8
   },
   date: {
-      fontSize: '1.1em',
+      fontSize: '1em',
       color: '#8b8b8b',
       marginTop: 4
   }
